@@ -71,9 +71,17 @@ namespace LinkedList
                 {
                     Console.WriteLine("Position out of range");
                 }
-
             }
             return head;
+        }
+        internal Node PoP_First_element()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
         }
     }
 }

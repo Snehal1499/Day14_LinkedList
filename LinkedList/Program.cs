@@ -14,6 +14,9 @@ namespace LinkedList
             Console.WriteLine("Adding 30 between 50 and 70");
             list.InsertAtParticulatPosition(2, 30);
             list.Display();
+            Console.WriteLine("Popping first Element in List");
+            list.PoP_First_element();
+            list.Display();
         }
     }
 }
