@@ -101,17 +101,21 @@ namespace LinkedList
             newNode.next = null;
             return head;
         }
-        internal Node Search(int value)
+        internal int Search(int value)
         {
-            while (this.head != null)
+            Node node = this.head;
+            int count = 1;
+            while (node != null)
             {
-                if (this.head.data == value)
+                if (node.data == value)
                 {
-                    return this.head;
+                    return count;
                 }
-                this.head = this.head.next;
+                node = node.next;
+                count++;
             }
-            return null;
+            return count;
+
         }
     }
 }
