@@ -71,62 +71,9 @@ namespace LinkedList
                 {
                     Console.WriteLine("Position out of range");
                 }
-            }
-            return head;
-        }
-        internal Node PoP_First_element()
-        {
-            if (this.head == null)
-            {
-                return null;
-            }
-            this.head = this.head.next;
-            return this.head;
-        }
-        internal Node PoP_Last_element()
-        {
-            if (this.head == null)
-            {
-                return null;
-            }
-            if (head.next == null)
-            {
-                return null;
-            }
-            Node newNode = head;
-            while (newNode.next.next != null)
-            {
-                newNode = newNode.next;
-            }
-            newNode.next = null;
-            return head;
-        }
-        internal void PoP_Paricular_element(int pos)
-        {
-            Node temp = head;
-            for (int i = 2; i < pos; i++)
-            {
-                temp = temp.next;
-            }
-            temp.next = temp.next.next;
-        }
-        internal int Search(int value)
-        {
-            Node node = this.head;
-            int count = 1;
-            while (node != null)
-            {
-                if (node.data == value)
-                {
-                    return count;
-                }
-                node = node.next;
-                count++;
 
             }
-            return count;
-
+            return head;
         }
     }
 }
-

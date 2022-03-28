@@ -9,10 +9,10 @@ namespace LinkedList
             Console.WriteLine("Welcome To LinkedList Program ");
             LinkedList list = new LinkedList();
             list.Add(56);
-            int a = list.Search(56);
-            list.InsertAtParticulatPosition(a + 1, 30);
-            int b = list.Search(30);
-            list.InsertAtParticulatPosition(b + 1, 70);
+            list.Add(70);
+            list.Display();
+            Console.WriteLine("Adding 30 between 50 and 70");
+            list.InsertAtParticulatPosition(2, 30);
             list.Display();
         }
     }
