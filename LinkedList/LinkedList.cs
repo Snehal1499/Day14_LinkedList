@@ -101,6 +101,15 @@ namespace LinkedList
             newNode.next = null;
             return head;
         }
+        internal void PoP_Paricular_element(int pos)
+        {
+            Node temp = head;
+            for (int i = 2; i < pos; i++)
+            {
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+        }
         internal int Search(int value)
         {
             Node node = this.head;
@@ -113,6 +122,7 @@ namespace LinkedList
                 }
                 node = node.next;
                 count++;
+
             }
             return count;
 
