@@ -14,8 +14,9 @@ namespace LinkedList
             list.Display();
             //Console.WriteLine("Popping first Element in List");
             //list.PoP_First_element();
-            Console.WriteLine("Popping Last Element in List");
-            list.PoP_Last_element();
+            //Console.WriteLine("Popping Last Element in List");
+            //list.PoP_Last_element();
+            Console.WriteLine("Search Element", list.Search(30));
             list.Display();
         }
     }
